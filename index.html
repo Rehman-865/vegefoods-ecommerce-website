@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegefoods</title>
+    <link rel="stylesheet" href="style.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+<!-- Top Sale Announcement Bar -->
+<div class="sale-ticker-container">
+    <div class="sale-ticker-text">
+        <i class="fa-solid fa-tag"></i>
+        Big 11.11 Sale is Live! Flat 50% Off on Fresh Vegetables! &nbsp;&nbsp;&nbsp;&nbsp; 
+        <i class="fa-solid fa-car-rear"></i> 
+        Free Delivery on Orders Over $50! &nbsp;&nbsp;&nbsp;&nbsp;
+        <i class="fa-solid fa-star"></i>
+         100% Organic Products!
+    </div>
+</div>
+
+<!-- Top Contact Bar -->
+<div class="top-header-bar">
+    <div class="container">
+        <div class="header-col phone">
+            <i class="fa-solid fa-phone"></i>
+            <span>(555) 010-2468</span>
+        </div>
+        <div class="header-col text">
+            <span>DELIVERY IN 1-2 BUSINESS DAYS & EASY RETURNS</span>
+        </div>
+        <div class="header-col email">
+           <i class="fa-solid fa-envelope"></i>
+            <span>HELLO@EXAMPLE.COM</span>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Main Navbar -->
+<nav class="ftco-navbar">
+    <div class="container">
+        <!-- Brand Logo -->
+        <a class="navbar-brand" href="index.html">VEGEFOODS</a>
+        
+        <!-- Mobile Toggle Button -->
+        <button class="navbar-toggler" id="mobile-menu-btn">
+            <span class="icon-menu">☰</span> Menu
+        </button>
+
+        <!-- Navbar Links -->
+        <div class="navbar-collapse" id="navbar-nav">
+            <ul class="navbar-nav-list">
+                <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
+                
+                <!-- Dropdown Menu (Shop) -->
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Shop ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item">Shop</a></li>
+                        <li><a href="#" class="dropdown-item">Single Product</a></li>
+                        <li><a href="#" class="dropdown-item">Cart</a></li>
+                        <li><a href="#" class="dropdown-item">Checkout</a></li>
+                        <li><a href="#" class="dropdown-item">Wishlist</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                
+                <!-- Cart Icon Link -->
+                <li class="nav-item cta cta-colored">
+                    <a href="#" class="nav-link">
+                        <span class="icon-shopping_cart">🛒</span> [0]
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<section class="hero-slider">
+    <!-- Slides Container -->
+    <div class="slides-container">
+        <!-- Slide 1 -->
+        <div class="slide active" style="background-image: url('./assets/bg_1.avif');">
+            <div class="overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-heading">WE SERVE FRESH VEGETABLES & FRUITS</h1>
+                <p class="hero-subheading">WE DELIVER ORGANIC VEGETABLES & FRUITS</p>
+                <a href="#" class="btn-shop">Shop now</a>
+            </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="slide" style="background-image: url('https://preview.colorlib.com/theme/vegefoods/images/bg_2.jpg');">
+            <div class="overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-heading">100% FRESH & ORGANIC FOODS</h1>
+                <p class="hero-subheading">WE DELIVER ORGANIC VEGETABLES & FRUITS</p>
+                <a href="#" class="btn-shop">Shop now</a>
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="slide" style="background-image: url('https://preview.colorlib.com/theme/vegefoods/images/bg_3.jpg');">
+            <div class="overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-heading">PRAMOTE HEALTHY LIFESTYLE</h1>
+                <p class="hero-subheading">WE DELIVER ORGANIC VEGETABLES & FRUITS</p>
+                <a href="#" class="btn-shop">Shop now</a>
+            </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="slide" style="background-image: url('https://preview.colorlib.com/theme/vegefoods/images/bg_2.jpg');">
+            <div class="overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-heading">BEST QUALITY PRODUCTS</h1>
+                <p class="hero-subheading">WE DELIVER ORGANIC VEGETABLES & FRUITS</p>
+                <a href="#" class="btn-shop">Shop now</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Arrows -->
+    <button class="slider-arrow prev-arrow" id="prevBtn">❮</button>
+    <button class="slider-arrow next-arrow" id="nextBtn">❯</button>
+
+    <!-- Bottom Dots Indicator -->
+    <div class="dots-container">
+        <span class="dot active" data-index="0"></span>
+        <span class="dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+        <span class="dot" data-index="3"></span>
+    </div>
+</section>
+
+
+<!-- Services / Features Section -->
+<section class="ftco-section services-section">
+    <div class="container">
+        <div class="services-grid">
+            
+            <!-- Feature 1: Free Shipping -->
+            <div class="service-box">
+                <div class="icon-wrap bg-pink">
+                    <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="1" y="3" width="15" height="13"></rect>
+                        <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                        <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                        <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                    </svg>
+                </div>
+                <h3>FREE SHIPPING</h3>
+                <p>ON ORDERS OVER $50</p>
+            </div>
+
+            <!-- Feature 2: Always Fresh -->
+            <div class="service-box">
+                <div class="icon-wrap bg-brown">
+                    <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.4 19 2c1 2 2 4.1 2 9a9 9 0 0 1-10 9Z"></path>
+                        <path d="M11 20v-9"></path>
+                    </svg>
+                </div>
+                <h3>ALWAYS FRESH</h3>
+                <p>PACKED THE DAY IT SHIPS</p>
+            </div>
+
+            <!-- Feature 3: Superior Quality -->
+            <div class="service-box">
+                <div class="icon-wrap bg-blue">
+                    <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="8" r="6"></circle>
+                        <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path>
+                    </svg>
+                </div>
+                <h3>SUPERIOR QUALITY</h3>
+                <p>CERTIFIED ORGANIC</p>
+            </div>
+
+            <!-- Feature 4: Support -->
+            <div class="service-box">
+                <div class="icon-wrap bg-green">
+                    <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
+                        <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path>
+                    </svg>
+                </div>
+                <h3>SUPPORT</h3>
+                <p>HERE TO HELP, EVERY DAY</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Categories Section -->
+<section class="ftco-section ftco-category">
+    <div class="container">
+        <div class="category-grid">
+            
+            <!-- Left Column -->
+            <div class="category-col">
+                <!-- Category 1: Fruits -->
+                <div class="category-item img-zoom">
+                    <img src="https://preview.colorlib.com/theme/vegefoods/images/category-1.jpg" alt="Fruits">
+                    <div class="category-badge">Fruits</div>
+                </div>
+                <!-- Category 2: Vegetables -->
+                <div class="category-item img-zoom">
+                    <img src="https://preview.colorlib.com/theme/vegefoods/images/category-2.jpg" alt="Vegetables">
+                    <div class="category-badge">Vegetables</div>
+                </div>
+            </div>
+
+            <!-- Middle Featured Column -->
+            <div class="category-col center-col">
+                <div class="category-center-card">
+                    <div class="center-watermark" style="background-image: url('https://preview.colorlib.com/theme/vegefoods/images/category.jpg');"></div>
+                    <div class="center-content">
+                        <h2>Vegetables</h2>
+                        <p>Protect the health of every home</p>
+                        <a href="shop.html" class="btn-shop-now">Shop now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="category-col">
+                <!-- Category 3: Juices -->
+                <div class="category-item img-zoom">
+                    <img src="https://preview.colorlib.com/theme/vegefoods/images/category-3.jpg" alt="Juices">
+                    <div class="category-badge">Juices</div>
+                </div>
+                <!-- Category 4: Dried -->
+                <div class="category-item img-zoom">
+                    <img src="https://preview.colorlib.com/theme/vegefoods/images/category-4.jpg" alt="Dried">
+                    <div class="category-badge">Dried</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- Featured Products Section -->
+<section class="ftco-section ftco-products">
+    <div class="container">
+        <!-- Section Title Header -->
+        <div class="section-header text-center">
+            <span class="subheading">Featured Products</span>
+            <h2 class="main-heading">Our Products</h2>
+            <p class="description">This week's favourites from our partner farms, picked ripe and packed the day they ship.</p>
+        </div>
+
+        <!-- Products Grid (8 Items) -->
+        <div class="products-grid">
+
+            <!-- Product 1: Bell Pepper -->
+            <div class="product-card">
+                <div class="product-img-wrap">
+                    <span class="discount-badge">30%</span>
+                    <img src="https://preview.colorlib.com/theme/vegefoods/images/product-1.jpg" alt="Bell Pepper">
+                    <div class="product-actions">
+                        <button class="action-btn" title="View Details">👁️</button>
+                        <button class="action-btn add-to-cart" title="Add to Cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                        <button class="action-btn" title="Wishlist"><i class="fa-solid fa-heart"></i></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3><a href="#">BELL PEPPER</a></h3>
+                    <div class="price-wrap">
+                        <span class="old-price">$7.00</span>
+                        <span class="sale-price">$4.90</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2: Strawberry -->
+            <div class="product-card">
+                <div class="product-img-wrap">
+                    <img src="https://preview.colorlib.com/theme/vegefoods/images/product-2.jpg" alt="Strawberry">
+                    <div class="product-actions">
+                        <button class="action-btn" title="View Details">👁️</button>
+                        <button class="action-btn add-to-cart" title="Add to Cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                        <button class="action-btn" title="Wishlist"><i class="fa-solid fa-heart"></i></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3><a href="#">STRAWBERRY</a></h3>
+                    <div class="price-wrap">
+                        <span class="sale-price">$5.50</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3: Snow Peas -->
+            <div class="product-card">
+                <div class="product-img-wrap">
+                    <img src="https://preview.colorlib.com/theme/vegefoods/images/product-3.jpg" alt="Snow Peas">
+                    <div class="product-actions">
+                        <button class="action-btn" title="View Details">👁️</button>
+                        <button class="action-btn add-to-cart" title="Add to Cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                        <button class="action-btn" title="Wishlist"><i class="fa-solid fa-heart"></i></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3><a href="#">SNOW PEAS</a></h3>
+                    <div class="price-wrap">
+                        <span class="sale-price">$3.20</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4: Purple Cabbage -->
+            <div class="product-card">
+                <div class="product-img-wrap">
+                    <img src="https://preview.colorlib.com/theme/vegefoods/images/product-4.jpg" alt="Purple Cabbage">
+                    <div class="product-actions">
+                        <button class="action-btn" title="View Details">👁️</button>
+                        <button class="action-btn add-to-cart" title="Add to Cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                        <button class="action-btn" title="Wishlist"><i class="fa-solid fa-heart"></i></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3><a href="#">PURPLE CABBAGE</a></h3>
+                    <div class="price-wrap">
+                        <span class="sale-price">$2.80</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 5: Tomatoes -->
+            <div class="product-card">
+                <div class="product-img-wrap">
+                    <span class="discount-badge">31%</span>
+                    <img src="https://preview.colorlib.com/theme/vegefoods/images/product-5.jpg" alt="Tomatoes">
+                    <div class="product-actions">
+                        <button class="action-btn" title="View Details">👁️</button>
+                        <button class="action-btn add-to-cart" title="Add to Cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                        <button class="action-btn" title="Wishlist"><i class="fa-solid fa-heart"></i></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3><a href="#">TOMATOES</a></h3>
+                    <div class="price-wrap">
+                        <span class="old-price">$4.90</span>
+                        <span class="sale-price">$3.40</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 6: Broccoli -->
+            <div class="product-card">
+                <div class="product-img-wrap">
+                    <img src="https://preview.colorlib.com/theme/vegefoods/images/product-6.jpg" alt="Broccoli">
+                    <div class="product-actions">
+                        <button class="action-btn" title="View Details">👁️</button>
+                        <button class="action-btn add-to-cart" title="Add to Cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                        <button class="action-btn" title="Wishlist"><i class="fa-solid fa-heart"></i></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3><a href="#">BROCCOLI</a></h3>
+                    <div class="price-wrap">
+                        <span class="sale-price">$2.60</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 7: Carrots -->
+            <div class="product-card">
+                <div class="product-img-wrap">
+                    <img src="https://preview.colorlib.com/theme/vegefoods/images/product-7.jpg" alt="Carrots">
+                    <div class="product-actions">
+                        <button class="action-btn" title="View Details">👁️</button>
+                        <button class="action-btn add-to-cart" title="Add to Cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                        <button class="action-btn" title="Wishlist"><i class="fa-solid fa-heart"></i></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3><a href="#">CARROTS</a></h3>
+                    <div class="price-wrap">
+                        <span class="sale-price">$1.90</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 8: Fruit Juice -->
+            <div class="product-card">
+                <div class="product-img-wrap">
+                    <img src="https://preview.colorlib.com/theme/vegefoods/images/product-8.jpg" alt="Fruit Juice">
+                    <div class="product-actions">
+                        <button class="action-btn" title="View Details">👁️</button>
+                        <button class="action-btn add-to-cart" title="Add to Cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                        <button class="action-btn" title="Wishlist"><i class="fa-solid fa-heart";"></i></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3><a href="#">FRUIT JUICE</a></h3>
+                    <div class="price-wrap">
+                        <span class="sale-price">$4.50</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- Deal of the Day Section -->
+<section class="ftco-section deal-section" style="background-image: url('https://preview.colorlib.com/theme/vegefoods/images/bg_3.jpg');">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="deal-wrapper">
+            <!-- White Deal Box -->
+            <div class="deal-card">
+                <span class="subheading">Best Price For You</span>
+                <h2 class="deal-heading">Deal of the day</h2>
+                <p class="description">Fresh spinach from our own greenhouse, half price until midnight. One deal, every day.</p>
+                <h3 class="product-title">Spinach</h3>
+                <div class="price">
+                    <span class="old-price">$4.00</span> now <span class="sale-price">$2.00</span> only
+                </div>
+
+                <!-- Live Countdown Timer -->
+                <div class="timer-grid">
+                    <div class="timer-box">
+                        <span class="time-num" id="days">0</span>
+                        <span class="time-label">DAYS</span>
+                    </div>
+                    <div class="timer-box">
+                        <span class="time-num" id="hours">00</span>
+                        <span class="time-label">HOURS</span>
+                    </div>
+                    <div class="timer-box">
+                        <span class="time-num" id="minutes">00</span>
+                        <span class="time-label">MINUTES</span>
+                    </div>
+                    <div class="timer-box">
+                        <span class="time-num" id="seconds">00</span>
+                        <span class="time-label">SECONDS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Testimonial Section -->
+<section class="ftco-section testimony-section">
+    <div class="container">
+        <!-- Section Header -->
+        <div class="section-header text-center">
+            <span class="subheading">Testimony</span>
+            <h2 class="main-heading">What our customers say</h2>
+            <p class="description">Thousands of households get their weekly fruit and vegetables from us. Here is what a few of them say.</p>
+        </div>
+
+        <!-- Testimonials Grid -->
+        <div class="testimony-grid">
+            
+            <!-- Customer 1 -->
+            <div class="testimony-card">
+                <div class="user-img" style="background-image: url('https://preview.colorlib.com/theme/vegefoods/images/person_1.jpg');">
+                    <span class="quote-icon">“</span>
+                </div>
+                <div class="text-center">
+                    <p class="mb-4 msg">My kids actually ask for carrots now. The strawberries in summer were the sweetest we have ever had.</p>
+                    <p class="name">Emily Carter</p>
+                    <span class="position">PARENT OF TWO</span>
+                </div>
+            </div>
+
+            <!-- Customer 2 -->
+            <div class="testimony-card">
+                <div class="user-img" style="background-image: url('https://preview.colorlib.com/theme/vegefoods/images/person_2.jpg');">
+                    <span class="quote-icon">“</span>
+                </div>
+                <div class="text-center">
+                    <p class="mb-4 msg">Our weekly box arrives on time every Thursday, and the vegetables last far longer than anything from the supermarket.</p>
+                    <p class="name">Maya Thompson</p>
+                    <span class="position">WEEKLY BOX SUBSCRIBER</span>
+                </div>
+            </div>
+
+            <!-- Customer 3 -->
+            <div class="testimony-card">
+                <div class="user-img" style="background-image: url('https://preview.colorlib.com/theme/vegefoods/images/person_3.jpg');">
+                    <span class="quote-icon">“</span>
+                </div>
+                <div class="text-center">
+                    <p class="mb-4 msg">I order for a family of five. The produce is always clean, ripe and packed without any plastic waste.</p>
+                    <p class="name">Daniel Okafor</p>
+                    <span class="position">HOME COOK</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Bottom Slider Dots Indicator -->
+        <div class="testimony-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+</section><hr>
+
+
+<!-- Partner Logos Section -->
+<section class="ftco-section ftco-partner">
+    <div class="container">
+        <div class="partner-grid">
+            
+            <!-- Partner 1 -->
+            <div class="partner-item">
+                <a href="#" class="partner-link">
+                    <img src="./assets/partner-1.svg" alt="Greenfield Farms" class="partner-icon">
+                   
+                </a>
+            </div>
+
+            <!-- Partner 2 -->
+            <div class="partner-item">
+                <a href="#" class="partner-link">
+                    <img src="./assets/partner-2.svg" alt="Orchard & Co" class="partner-icon">
+                   
+            </div>
+
+            <!-- Partner 3 -->
+            <div class="partner-item">
+                <a href="#" class="partner-link">
+                    <img src="./assets/partner-3.svg" alt="Sunny Acres" class="partner-icon">
+                    
+                </a>
+            </div>
+
+            <!-- Partner 4 -->
+            <div class="partner-item">
+                <a href="#" class="partner-link">
+                    <img src="./assets/partner-4.svg" alt="Root Cellar" class="partner-icon">
+                  
+                </a>
+            </div>
+
+            <!-- Partner 5 -->
+            <div class="partner-item">
+                <a href="#" class="partner-link">
+                    <img src="./assets/partner-5.svg" alt="Leaf & Basket" class="partner-icon">
+               
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section><hr>
+
+<!-- Vegetable To-Do List Section -->
+<section class="ftco-section ftco-todo-list">
+    <div class="container">
+        <!-- Section Header -->
+        <div class="section-header text-center">
+            <span class="subheading">Stay Organized</span>
+            <h2 class="main-heading">My Vegetable Shopping List</h2>
+            <p class="description">Apni pasandeeda organic sabziyon ki list banayein taake agle order mein asani ho.</p>
+        </div>
+
+        <!-- Todo Container Box -->
+        <div class="todo-wrapper">
+            <div class="todo-card">
+                <!-- Input Form -->
+                <div class="todo-input-group">
+                    <input type="text" id="todoInput" placeholder="Nayi sabzi add karein (e.g., Fresh Broccoli)...">
+                    <button id="addTodoBtn">Add Item</button>
+                </div>
+
+                <!-- Todo List Items -->
+                <ul id="todoList" class="todo-list">
+                    <!-- Default Sample Items -->
+                    <li class="todo-item">
+                        <span class="item-text">Organic Tomatoes (2kg)</span>
+                        <button class="delete-btn">×</button>
+                    </li>
+                    <li class="todo-item">
+                        <span class="item-text">Fresh Carrots (1kg)</span>
+                        <button class="delete-btn">×</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Newsletter Subscription Section -->
+<section class="ftco-section ftco-no-pt ftco-no-pb py-5 bg-light ftco-newsletter">
+    <div class="container">
+        <div class="row d-flex justify-content-center py-5">
+            <div class="col-md-6 text-center newsletter-content">
+                <h2 class="mb-0">Subcribe to our Newsletter</h2>
+                <span>Get e-mail updates about our latest shops and special offers</span>
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <form action="#" class="subscribe-form" id="newsletterForm">
+                    <div class="form-group d-flex">
+                        <input type="email" class="form-control" id="newsletterEmail" placeholder="Enter email address" required>
+                        <input type="submit" value="Subscribe" class="submit px-3">
+                    </div>
+                    <small id="newsletterMessage" class="subscription-msg"></small>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="ftco-footer ftco-section">
+    <div class="container">
+        <!-- Back to Top Floating Button -->
+        <button id="backToTopBtn" title="Go to top">↑</button>
+
+        <div class="footer-grid">
+            
+            <!-- Column 1: Brand Info & About -->
+            <div class="footer-col brand-col">
+                <h2 class="footer-heading logo-text"><a href="#">Vegefoods</a></h2>
+                <p class="footer-about">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                <ul class="footer-social">
+                    <li><a href="#" title="Twitter"><i class="fa-brands fa-x-twitter" style="color: black;"></i></a></li>
+                    <li><a href="#" title="Facebook"><i class="fa-brands fa-facebook" style="color: black;"></i></a></li>
+                    <li><a href="#" title="Instagram"><i class="fa-brands fa-instagram" style="color: black;"></i></a></li>
+                </ul>
+            </div>
+
+            <!-- Column 2: Quick Navigation Menu -->
+            <div class="footer-col">
+                <h2 class="footer-heading">Menu</h2>
+                <ul class="footer-links">
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Journal / Blog</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Customer Help & Support -->
+            <div class="footer-col">
+                <h2 class="footer-heading">Help</h2>
+                <div class="footer-help-wrap">
+                    <ul class="footer-links">
+                        <li><a href="#">Shipping Information</a></li>
+                        <li><a href="#">Returns & Exchange</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                    <ul class="footer-links">
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Column 4: Contact Info -->
+            <div class="footer-col contact-col">
+                <h2 class="footer-heading">Have a Questions?</h2>
+                <div class="block-23">
+                    <ul>
+                        <li>
+                           <i class="fa-solid fa-location-dot"></i>
+                            <span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span>
+                        </li>
+                        <li>
+                            <a href="tel:+23923929210">
+                               <i class="fa-solid fa-phone"></i>
+                                <span class="text">+2 392 3929 210</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:info@yourdomain.com">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span class="text">info@yourdomain.com</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer Bottom Bar: Copyright & Payment Icons -->
+        <div class="footer-bottom">
+            <p class="copyright-text">
+                Copyright &copy; <span id="currentYear"></span> All rights reserved | Made with ❤️ for Vegefoods
+            </p>
+            <div class="payment-methods">
+                <span class="pay-badge">VISA</span>
+                <span class="pay-badge">MasterCard</span>
+                <span class="pay-badge">PayPal</span>
+                <span class="pay-badge">Apple Pay</span>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+
+
+
+
+<script src="./script.js"></script>
+</body>
+</html>
